@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET1.A.2018.Petrovich.07", "NET1.A.2018.Petrovich.07\NET1.A.2018.Petrovich.07.csproj", "{8062D895-C2F6-48D9-BAB5-D5BBBB1ACDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{D3AA3FBE-AE6D-4B7A-8ADA-7903BDB5E2E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8062D895-C2F6-48D9-BAB5-D5BBBB1ACDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8062D895-C2F6-48D9-BAB5-D5BBBB1ACDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8062D895-C2F6-48D9-BAB5-D5BBBB1ACDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8062D895-C2F6-48D9-BAB5-D5BBBB1ACDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3AA3FBE-AE6D-4B7A-8ADA-7903BDB5E2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3AA3FBE-AE6D-4B7A-8ADA-7903BDB5E2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3AA3FBE-AE6D-4B7A-8ADA-7903BDB5E2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3AA3FBE-AE6D-4B7A-8ADA-7903BDB5E2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2DD2264-643F-45F6-A47D-74B1C7486D70}
+	EndGlobalSection
+EndGlobal
