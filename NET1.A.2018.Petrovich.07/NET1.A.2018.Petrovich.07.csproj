@@ -45,6 +45,7 @@
     <Compile Include="BankAccountsFactories.cs" />
     <Compile Include="BankServises.cs" />
     <Compile Include="NumberGenerators.cs" />
+    <Compile Include="OperationReportInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
   </ItemGroup>

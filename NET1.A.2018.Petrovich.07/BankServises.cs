@@ -13,7 +13,14 @@ namespace NET1.A._2018.Petrovich._07
     public abstract class AbstractBankService
     {
         protected IRepository repository;
-        
+
+        public event EventHandler<OperationReportInfo> OperationReport = delegate { };
+
+        private void OnOperationReport(object sender, OperationReportInfo info)
+        {
+            OperationReport(sender, info);
+        }
+
         protected AbstractBankService(IRepository repository)
         {
             this.repository = repository ?? throw new ArgumentNullException(nameof(repository));
@@ -70,6 +77,15 @@ namespace NET1.A._2018.Petrovich._07
             tempAcc.BonusPoints += CalculateBonusPoints(tempAcc.Status, amount);
 
             repository.Save(tempAcc);
+
+            OperationReportInfo info = new OperationReportInfo()
+            {
+                AccNumber = accNumber,
+                TypeOperaton = "Deposit",
+                Amount = amount
+            };
+
+            OnOperationReport(this, info);
         }
 
         /// <summary>
@@ -104,6 +120,15 @@ namespace NET1.A._2018.Petrovich._07
             tempAcc.BonusPoints -= CalculateBonusPoints(tempAcc.Status, amount);
 
             repository.Save(tempAcc);
+
+            OperationReportInfo info = new OperationReportInfo()
+            {
+                AccNumber = accNumber,
+                TypeOperaton = "Withdraw",
+                Amount = amount
+            };
+
+            OnOperationReport(this, info);
         }
 
         /// <summary>
